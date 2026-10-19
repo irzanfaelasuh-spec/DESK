@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>NOVA Desktop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- BOOT SCREEN -->
+    <div id="boot-screen">
+        <div class="welcome-text">WELCOME</div>
+    </div>
+
+    <!-- LOGIN SCREEN -->
+    <div id="login-screen" style="display:none;">
+        <div class="login-box">
+            <h2 style="text-align:center; margin-bottom: 20px; font-weight: 300; letter-spacing: 2px;">NOVA DESKTOP</h2>
+            <input type="text" id="login-name" placeholder="Name" autocomplete="off">
+            <input type="password" id="login-pass" placeholder="Password">
+            <button onclick="NOVA.login()">Enter</button>
+        </div>
+    </div>
+
+    <!-- DESKTOP -->
+    <div id="desktop">
+        <div id="desktop-icons"></div>
+        <div id="windows-container"></div>
+        
+        <!-- TASKBAR -->
+        <div id="taskbar">
+            <div id="clock">
+                <span id="time">00:00</span>
+                <span id="date">Jan 1, 2024</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTEXT MENU -->
+    <div id="context-menu"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
